@@ -1,8 +1,10 @@
 body {
-    background-color: rgb(212, 77, 77);
+    background: linear-gradient(to bottom right, #ff3366, #d72e53, #c30a45);
+    background-attachment: fixed;
     font-family:'Roboto', sans-serif;
     font-size: 16px;
     margin: 0 auto;
+    padding: 0;
 
 }
 
@@ -24,7 +26,7 @@ body {
 }
 
 h1 {
-    color: rgb(212, 77, 77);
+    color: #d72e53;
     border-bottom: 1px solid lightgray;
     padding-bottom: 15px;
     
@@ -68,7 +70,7 @@ input:hover {
 
 button[type=submit] {
     border: none;
-    background-color:rgb(212, 77, 77);
+    background:linear-gradient(to bottom right, #ff3366, #d72e53, #c30a45);
     padding: 0;
     width: 295px;
     height: 50px;
