@@ -13,9 +13,10 @@ body {
     background-color: white;
     width: 350px;
     position: absolute;
-    top: 50px;
+    top: 150px;
     left: 480px;
-    margin: 0;
+    margin: 0 auto;
+    
     
 }
 .wrap {
@@ -39,12 +40,13 @@ input {
     height: 50px;
     border-radius: 5px;
     padding-left: 7px; 
-    position: relative; 
+    position: relative;
+    border: 1px solid gray; 
 }
 .fa-user {
     position: absolute;
     color: gray;
-    bottom: 250px;
+    bottom: 245px;
     left: 300px; 
 
 }
@@ -65,7 +67,7 @@ input {
 }
 
 input:hover {
-    border-color:rgb(212, 77, 77);
+    border: 1px solid rgb(212, 77, 77)
 }
 
 button[type=submit] {
