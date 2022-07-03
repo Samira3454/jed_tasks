@@ -104,17 +104,18 @@ label {
 
 
 .chek {
-    width: 15px;
-    height: 12px;
+    width: 13px;
+    height: 13px;
     float: left;
-    position: relative;  
+    position: relative;
+      
     
 }
 
 .chek::before {
     position: absolute;
-    width: 12px;
-    height: 15px;
+    height: 100%;
+    width: 55%;
     top: 0;
     content: " ";
     background-color:rgba(61, 60, 60, 0.623);
@@ -122,7 +123,17 @@ label {
     padding: 0px 3px;
     
 }
-
+.chek:checked::before {
+    content: "✓";
+    color:rgb(185, 179, 179);
+    font-size: 9px;
+    font-weight: bolder;
+    background-color:rgba(0, 0, 0, 0.897);
+    border-radius: 2px;
+    padding-left: 3px;
+    width: 50%;
+    height: 100%;
+}
 
 p {
     color: gray;
