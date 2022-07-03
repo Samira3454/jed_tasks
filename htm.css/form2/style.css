@@ -57,6 +57,7 @@ h1 {
     margin-right: 0;
     
     
+    
 }
 
 input {
@@ -69,6 +70,7 @@ input {
     color: white;
     border-radius: 5px;
     padding-left: 10px;
+    
 }
 
 button[type=submit] {
@@ -81,6 +83,7 @@ button[type=submit] {
     border: none;
     border-radius: 5px;
     font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
 
 }
 
@@ -102,9 +105,24 @@ label {
 
 .chek {
     width: 15px;
-    height: 15px;
+    height: 12px;
     float: left;
+    position: relative;  
+    
 }
+
+.chek::before {
+    position: absolute;
+    width: 12px;
+    height: 15px;
+    top: 0;
+    content: " ";
+    background-color:rgba(61, 60, 60, 0.623);
+    color: rgba(255, 255, 255, 0);
+    padding: 0px 3px;
+    
+}
+
 
 p {
     color: gray;
