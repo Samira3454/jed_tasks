@@ -35,13 +35,17 @@ p {
 }
 
 nav {
-    width: 1365px;;
+    width: 100%;
     margin: 0 auto;
     height: 30px;
     background-color: rgb(80, 69, 69);
     line-height: 30px;
 }
-
+ul {
+    display: flex;
+    margin: 0 auto;
+    width: 1365px;
+}
 a {
     color: white;
     text-decoration: none;
@@ -106,7 +110,7 @@ main {
 .box {
     text-align: center;
     box-sizing: border-box;
-    padding: 10px 40px;
+    padding: 10px 30px 50px 30px;
 }
 
 .box:hover{
@@ -122,36 +126,51 @@ main h1 {
     margin-bottom: 40px;
     text-align: center;
 }
- i {
+ .icon {
     color: gray;
     width: 60px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+
     
 }
+ 
+
 .item1:hover i, .item2:hover i, .item3:hover i{
     color: rgb(55, 182, 150);
 
 }
- .item1 .item2 .item3 > h2 {
+ .item1 > h2, .item2 > h2, .item3 > h2 {
     color: gray;
-    border-bottom: 1px solid rgb(32, 17, 17);
-    padding-bottom: 5px;
     width: 45px;
     margin: 0 auto;
-    position: relative;
+    font-weight: 600;
+    
  }
-
- .item1 .item2 .item3>h2::before {
-    position: absolute;
-
- }
-
  .item1:hover h2, .item2:hover h2, .item3:hover h2 {
     color: rgb(55, 182, 150);
-
  }
  
+
+ .item1 > h2::after, .item2 > h2::after, .item3 > h2::after  {
+    content: "";
+    display: block;
+    width: 35px;
+    margin-left: 5px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(182, 176, 176);
+    
+ }
+ 
+ .item1:hover h2::after, .item2:hover h2::after, .item3:hover h2::after{
+    width: 20px;
+    margin-left: 15px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(185, 178, 178);
+    
+ }
+
+
  .box p {
     color:rgb(31, 28, 28);
     font-size: 14px;
